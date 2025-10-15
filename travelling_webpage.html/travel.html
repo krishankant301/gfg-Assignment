@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .home{
+            height: 100vh;
+            background-image: url("https://images.pexels.com/photos/2662116/pexels-photo-2662116.jpeg");
+            background-size: cover;
+        }
+        .header{
+            background-color:blanchedalmond;
+            opacity: 0.7;
+            /* color:bisque;  */
+            display:flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            /* padding: 1.5rem; */
+            color: red;
+        }
+        .logo_img{
+            border-radius: 100%;
+            width:4.5rem;
+            height: 4.5rem;
+            
+        }
+        .nav{
+            font-size: 1.5rem;
+        }
+        .main{
+            
+            text-align: center;
+            color: Green;
+            background-size: cover;
+            font-size: 10rem;
+
+            /* height: 70vh; */
+        }
+        .destinationclass{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1rem;
+            padding: 0rem 1rem;
+        }
+        .dest_img{
+            height: 35vh;
+        }
+        img{
+            width: 100%;
+            
+        }
+        .dest_name{
+            display: flex;
+            justify-content: center;
+        }
+        .heading{
+            text-align: center;
+            color: green;            
+        }
+        .logo{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+        .testimony{
+            display:grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1rem;
+            
+        }
+        .review{
+            border: solid 0.2rem greenyellow;
+            padding: 0.5rem;
+            border-top-left-radius: 0.75rem;
+            border-top-right-radius: 0.75rem;
+            border-bottom-left-radius: 0.75rem;
+            border-bottom-right-radius: 0.75rem;
+        }
+        .about_us{
+            display:grid;
+            grid-template-columns: 3fr 2fr;
+        }
+        .subhead_about{
+            text-align: center;
+        }
+        .contact_us{
+            background-color:slategray;
+            color: white;
+            border: 0.1rem solid grey;
+            padding: 1rem;
+        }
+        .our_company{
+            padding: 1rem;
+            background-color:cadetblue;
+            opacity: 90%;
+            border: 0.1rem solid grey;
+        }
+    </style>
+</head>
+<body>
+    <section class="container">
+
+        <header class="header">
+            <div class="logo">
+                <img src="https://images.pexels.com/photos/33748594/pexels-photo-33748594.jpeg" alt="Logo" class="logo_img">
+                <h2>Agoda</h2>
+            </div>
+            <div class="nav">
+                <a href="#home">Home</a>
+                <a href="#destination">Destinations</a>
+                <a href="#testimony">Testimony</a>
+                <a href="#about">About Us</a>
+            </div>
+        
+        </header>
+        <section class="home" id="home">
+                
+            <div class="main">
+
+                <b>Welcome to Agoda</b>
+            </div>
+            <!-- <div>
+                <div class="services">Hotels</div>
+                <div class="services">Flights</div>
+                <div class="services">Trains</div>
+                <div class="services">Restraunts</div>
+            </div> -->
+            
+    
+        </section>
+        <section id="destination">
+            <h1 class="heading">
+                Destinations
+            </h1>
+            <div class="destinationclass">
+                <div class="card">
+                    <img src="https://lp-cms-production.imgix.net/2022-03/GettyRF_956963154.jpg?auto=format,compress&q=72&w=1095&fit=crop&crop=faces,edges" alt="" class="dest_img">
+                    <p class="dest_name"><strong>Uttarakhand</strong></p>
+                </div>
+                <div class="card">
+                    <img src="https://static.toiimg.com/photo/msid-93246451,width-96,height-65.cms" alt="" class="dest_img">
+                    <p class="dest_name"><strong>Himachal Pradesh</strong></p>
+                </div>
+                <div class="card">
+                    <img src="https://travenjo.com/wp-content/uploads/2022/06/Seven-Sisters-Falls-1-gaimg.jpg?x58748" alt="" class="dest_img">
+                    <p class="dest_name"><strong>Meghalaya</strong></p>
+                </div>
+                <div class="card">
+                    <img src="https://marquishotels.in/wp-content/uploads/2019/06/North_Goa_Beach-1024x768.jpg" alt="" class="dest_img">
+                    <p class="dest_name"><Strong>Goa</Strong></p>
+                </div>
+                <div class="card">
+                    <img src="https://invisit.in/images/destination/kashmir/kashmir-thumbnail2.jpg" alt="" class="dest_img">
+                    <p class="dest_name"><strong>Kashmir</strong></p>
+                </div>
+                <div class="card">
+                    <img src="https://images.pexels.com/photos/1481096/pexels-photo-1481096.jpeg" alt="" class="dest_img">
+                    <p class="dest_name"><strong>Andaman & Nicobar Islands</strong></p>
+                </div>
+            </div>
+        </section>
+        <section id="testimony">
+            <h1 class="heading">Testimony</h1>
+            <div class="testimony">
+                <div class="review">
+                    <h3>Adventure Lover</h3>
+                    <p>This website made planning my solo trip to Himachal so easy! From travel guides to hidden local spots, everything was just perfectly organized. I discovered places I’d never even heard of before. Truly a traveler’s paradise!</p>
+                </div>
+                <div class="review">
+                    <h3>Couple Traveler</h3>
+                    <p>We used this site to plan our honeymoon in Bali, and it was the best decision ever! The blogs gave us real traveler experiences and helped us pick the most romantic yet affordable stays. Highly recommended for couples!</p>
+                </div>
+                <div class="review">
+                    <h3>Family Vacationer</h3>
+                    <p>As a parent, I always worry about safety and convenience when traveling with kids. Thanks to this site, our Goa trip was stress-free! The detailed itineraries and travel tips were super helpful.</p>
+                </div>
+                <div class="review">
+                    <h3>Budget Traveler</h3>
+                    <p>Traveling on a budget is hard, but this platform made it possible! The blogs on budget-friendly destinations and transport hacks helped me save a lot while still enjoying every bit of my journey.</p>
+                </div>
+                <div class="review">
+                    <h3>Photography Enthusiast</h3>
+                    <p>I love capturing nature and culture through my lens, and this website helped me find some breathtaking locations! The travel stories inspired me to explore beyond the usual tourist spots.</p>
+                </div>
+                <div class="review">
+                    <h3>Spiritual Explorer</h3>
+                    <p>I was looking for peaceful and spiritual destinations, and this website guided me perfectly. The content is not just about places—it’s about experiences. My trip to Rishikesh truly felt transformative.</p>
+                </div>
+            </div>
+        </section>
+        <section id="about">
+            <h1 class="heading">About Us</h1>
+            <div class="about_us">
+                <div class="our_company">
+                    <h3 class="subhead_about">Our Company</h3>
+                    <p>Agoda, a digital travel platform, helps anyone see the world for less with its great value deals on a global network of over 6 million hotels and holiday properties worldwide, plus flights, activities, and more. Agoda.com and the Agoda mobile app are available in 39 languages and supported by 24/7 customer support.   Headquartered in Singapore, Agoda is part of Booking Holdings (Nasdaq: BKNG) and employs more than 7,000 staff in 27 markets, dedicated to leveraging best-in-class technology to make travel even easier.</p>
+                </div>
+                <div class="contact_us">
+                    <h3 class="subhead_about">Contact Us</h3>
+                    <p><strong>Call Us: </strong>+91-80 6928 9001</p>
+                    <p><strong>Mail Us: </strong>demo@gmail.com</p>
+                    <p><strong>Corporate & Communications Address:</strong><br>
+                        A-143, 7th Floor, Sovereign Corporate Tower, Sector- 136, Noida, Uttar Pradesh (201305)</p>
+                    <p>
+                        <strong>Registered Address:</strong><br>
+                        K 061, Tower K, Gulshan Vivante Apartment, Sector 137, Noida, Gautam Buddh Nagar, Uttar Pradesh, 201305
+                    </p>
+                </div>
+            </div>
+        </section>
+    </section>
+</body>
+</html>
