@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1>AFCAT Application Form</h1>
+        <form action="confirmation.html">
+            <div class="formdiv" id="name">
+                <label for="name">Full name:</label><br>
+                <input type="text" name="name" id="name" placeholder="Enter your name." required >
+            </div><br>
+            <div class="dob">
+                <label for="DOB">Date of Birth</label>
+                <input type="date" name="DOB" id="dob" required>
+            </div><br>
+            <div class="formdiv" id="gender" >
+                <label for="gender">Gender</label>
+                <input type="radio" name="Male" id="gender" >Male
+                <input type="radio" name="Female" id="gender" >Female
+            </div><br>
+            <div class="formdiv" id="religion">
+                <label for="religion">Religion:</label>
+                <select name="Religion" id="religion" required>
+                    <!-- <option value=default>select</option> -->
+                    <option value="Hindu">Hindu</option>
+                    <option value="Muslim">Muslim</option>
+                    <option value="Chirtian">Christian</option>
+                    <option value="Buddhism">Buddhism</option>
+                    <option value="Sikh">Sikh</option>
+                </select>
+            </div><br>
+            <div class="formdiv" id="fname">
+                <label for="fname">Father's name:</label><br>
+                <input type="text" name="FName" id="fname" placeholder="Enter your father's name." required>
+            </div><br>
+            <div class="formdiv" id="mname">
+                <label for="mname">Mother's name:</label><br>
+                <input type="text" name="MName" id="mname" placeholder="Enter your mother's name." required>
+            </div><br>
+            <div class="formdiv" id="email">
+                <label for="email">E-mail Id:</label><br>
+                <input type="text" name="email" id="email" placeholder="Enter your E-mail Id." required>
+            </div><br>
+            <div class="formdiv" id="phone">
+                <label for="phone">Contact Number:</label><br>
+                <input type="number" name="phone" id="phone" placeholder="Contact Number." required>
+            </div><br>
+            <div class="formdiv" id="address">
+                <label for="address">Resident Address: </label><br>
+                <input type="text" name="address" id="address" placeholder="Address Line 1" required>
+                <input type="text" name="address" id="address" placeholder="Address Line 2"><br>
+            </div><br>
+            <div class="city">
+                <label for="city">City:</label>
+                <select name="city" id="address">
+                    <option value="New Delhi">New Delhi</option>
+                    <option value="Bangalore">Bangalore</option>
+                    <option value="Jaipur">Jaipur</option>
+                    <option value="Hyderabad">Hyderabad</option>
+                    <option value="Dehradun">Dehradun</option>
+                    <option value="Chennai">Chennai</option>
+                    <option value="Kolkata">Kolkata</option>
+                </select>
+            </div><br>
+            <div class="country">
+                <label for="Country">Country: </label>
+                <select name="country" id="country">
+                    <option value="India">India</option>
+                    <option value="Nepal">Nepal</option>
+                    <option value="Bhutan">Bhutan</option>
+                    <option value="Myanmar">Myanmar</option>
+                    <option value="Bangladesh">Bangladesh</option>
+                    <option value="Sri Lanka">Sri Lanka</option>
+                </select>
+            </div><br>
+
+            <div class="formdiv" id="courses">
+                <label for="post">Select the courses you are applying for: </label><br>
+                <input type="checkbox" name="Flying" id="courses">Flying
+                <input type="checkbox" name="Administration" id="courses">Administration
+                <input type="checkbox" name="Logistics" id="courses">Logistics
+                <input type="checkbox" name="Weapon System" id="courses">Weapon System
+                <input type="checkbox" name="Education" id="courses">Education
+            </div><br>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
