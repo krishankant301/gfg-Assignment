@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script differ src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+        <style>
+            #card{
+                height: 25rem;
+                background-color: rgb(246, 243, 238);
+            }
+            #CarouselButton{
+                width: 3rem;
+                height: 3rem;
+                margin-top: 13%;
+                /* margin-left: 2%; */
+            }
+            #destimage{
+                height: 40vh;
+                border-radius: 1rem;
+            }
+            #destcard{
+                height: 500px;
+                border-radius: 1.5rem;
+            }
+            #parent{
+                /* background: linear-gradient(90deg, skyblue 0%, rgb(127, 215, 165) 80%); */
+                /* background-color:color-mix(in hsl shorter hue, skyblue 100%, seagreen 10%); */
+                /* background-color: linear-gradient(135deg, skyblue 100%, white 50%); */
+                background-color: skyblue;
+            }
+        </style>
+</head>
+
+<body>
+    <div class="container-fluid" id="parent">
+
+        <!-- navbar -->
+        <div class="container">
+            <nav
+            class="navbar navbar-expand-xxl navbar-light sticky-top"
+            style="background-color: blanchedalmond;">
+                <div class="container">
+                    <img 
+                    src="https://cdn6.agoda.net/images/kite-js/logo/agoda/color-default.svg"
+                    height="45rem"
+                    alt="Primary Logo">
+                    <!-- <a href="#" class="navbar-brand text-danger fs-3 ">Agoda</a> -->
+                    <button 
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#nav"
+                    aria-controls="nav"
+                    aria-expanded="false">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="nav">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item">
+                                <a href="#home" class="nav-link fs-5">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#destinations" class="nav-link fs-5">Destinations</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#testimonies" class="nav-link fs-5">Testimonials</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="/index.html" class="nav-link fs-5">
+                                    <button 
+                                    class="btn bg-primary"
+                                    type="button">
+                                        Book Now
+                                    </button>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#contact_us" class="nav-link fs-5">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <!-- <button class="button float-start bg-light rounded-pill">Book Now</button> -->
+
+        <!-- Home -->
+
+        <div class="container mb-5" id="home" style="height: 81vh;">
+            <div 
+            class="carousel slide" 
+            id="carouselExampleIndicators" 
+            data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button 
+                    type="button" 
+                    data-bs-target="#carouselExampleIndicators" 
+                    data-bs-slide-to="0"
+                    class="active"
+                    aria-current="true"
+                    aria-label="Slide-1"></button>
+                    <button 
+                    type="button" 
+                    data-bs-target="#carouselExampleIndicators" 
+                    data-bs-slide-to="1"
+                    aria-label="Slide-2"></button>
+                    <button 
+                    type="button" 
+                    data-bs-target="#carouselExampleIndicators" 
+                    data-bs-slide-to="2"
+                    aria-label="Slide-3"></button>
+                    <button 
+                    type="button" 
+                    data-bs-target="#carouselExampleIndicators" 
+                    data-bs-slide-to="3"
+                    aria-label="Slide-4"></button>
+                    <button 
+                    type="button" 
+                    data-bs-target="#carouselExampleIndicators" 
+                    data-bs-slide-to="4"
+                    aria-label="Slide-5"></button>
+                    <button 
+                    type="button" 
+                    data-bs-target="#carouselExampleIndicators" 
+                    data-bs-slide-to="5"
+                    aria-label="Slide-6"></button>
+                </div>
+                <div class="carousel-inner text-center">
+                    <div class="carousel-item active" data-bs-interval=4000 data-bs-pause="hover">
+                        <img 
+                        src="https://lp-cms-production.imgix.net/2022-03/GettyRF_956963154.jpg?auto=format,compress&q=72&w=1095&fit=crop&crop=faces,edges" 
+                        alt="" 
+                        style="height: 80vh;
+                                width: 90vw;">
+                    </div>
+                    <div class="carousel-item" data-bs-interval=4000 data-bs-pause="hover">
+                        <img 
+                        src="https://static.toiimg.com/photo/msid-93246451,width-96,height-65.cms" 
+                        alt=""
+                        style="height: 80vh;
+                                width: 90vw;">
+                    </div>
+                    <div class="carousel-item" data-bs-interval=4000 data-bs-pause="hover">
+                        <img 
+                        src="https://travenjo.com/wp-content/uploads/2022/06/Seven-Sisters-Falls-1-gaimg.jpg?x58748" 
+                        alt=""
+                        style="height: 80vh;
+                                width: 90vw;">
+                    </div>
+                    <div class="carousel-item" data-bs-interval=4000 data-bs-pause="hover">
+                        <img 
+                        src="https://marquishotels.in/wp-content/uploads/2019/06/North_Goa_Beach-1024x768.jpg" 
+                        alt=""
+                        style="height: 80vh;
+                                width: 90vw;">
+                    </div>
+                    <div class="carousel-item" data-bs-interval=4000 data-bs-pause="hover">
+                        <img 
+                        src="https://invisit.in/images/destination/kashmir/kashmir-thumbnail2.jpg" 
+                        alt=""
+                        style="height: 80vh;
+                                width: 90vw;">
+                    </div>
+                    <div class="carousel-item" data-bs-interval=4000 data-bs-pause="hover">
+                        <img 
+                        src="https://images.pexels.com/photos/1481096/pexels-photo-1481096.jpeg" 
+                        alt=""
+                        style="height: 80vh;
+                                width: 90vw;">
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+        <!-- destinations -->
+
+        <div class="container my-5" id="destinations">
+            <p class="display-3 text-center">Destinations</p>
+            <div class="card-group">
+                <div class="col-4 p-2">
+                    <div class="card card-fluid" id="destcard">
+                        <div class="card-header">
+                            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="https://www.tusktravel.com/blog/wp-content/uploads/2023/02/Mussoorie-Uttarakhand4.jpg" class="d-block w-100" alt="..." id="destimage">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="https://www.peakadventuretour.com/assets/imgs/uttarakhand-tourism-01.webp" class="d-block w-100" alt="..." id="destimage">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9Ae9dQkq-rnmX0bkL0jGbVkURr4h_scvk_w&s" class="d-block w-100" alt="..." id="destimage">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="https://www.stayvista.com/blog/wp-content/uploads/2024/10/A_View_of_Kedarnath_Uttarakhand_India_November_2013.jpg" class="d-block w-100" alt="..." id="destimage">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="https://www.hamarauttarakhand.com/wp-content/uploads/2023/09/Kedarnath-850x560.jpeg" class="d-block w-100" alt="..." id="destimage">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="https://d3sftlgbtusmnv.cloudfront.net/blog/wp-content/uploads/2024/12/Places-To-Visit-In-Uttarakhand-In-June-840x425.jpg" class="d-block w-100" alt="..." id="destimage">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-title fs-5 text-success">🏔️ Uttrakhand</div>
+                            <div class="card-subtitle">Uttarakhand, the “Land of Gods,” is a serene Himalayan state known for its spiritual heritage and breathtaking landscapes. From the holy towns of Rishikesh and Haridwar to the scenic beauty of Nainital and Auli, it’s a perfect blend of peace, adventure, and natural charm.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 p-2">
+                    <div class="card card-fluid" id="destcard">
+                        <div class="card-header">
+                            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://images.travelandleisureasia.com/wp-content/uploads/sites/2/2023/11/06105321/Feature-11-1600x900.jpg" class="d-block w-100" alt="..." id="destimage">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://assets.cntraveller.in/photos/66ab6453fe4fdad0450b3402/master/pass/GettyImages-1580694292.jpg" class="d-block w-100" alt="..." id="destimage">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReKn_hyk0ZsKB2XxCy7ddj9-IHH_I7D8Xptw&s" class="d-block w-100" alt="..." id="destimage">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFLjEfbJLPq1AOahdjldWYFvJtb9DFrxB6ZA&s" class="d-block w-100" alt="..." id="destimage">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://www.hamarauttarakhand.com/wp-content/uploads/2023/09/Kedarnath-850x560.jpeg" class="d-block w-100" alt="..." id="destimage">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://www.fabhotels.com/blog/wp-content/uploads/2024/02/b39a81e3-himachal-pradesh.jpg" class="d-block w-100" alt="..." id="destimage">
+                </div>
+            </div>
+        </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-title fs-5 text-success">🌄 Himachal Pradesh</div>
+                            <div class="card-subtitle">Himachal Pradesh is a paradise nestled in the Himalayas, known for its charming hill stations like Manali and Shimla. With lush valleys, snow peaks, and adventure sports, it’s the perfect mix of thrill and tranquility.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 p-2">
+                    <div class="card card-fluid" id="destcard">
+                        <div class="card-header">
+                            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://s7ap1.scene7.com/is/image/incredibleindia/double-decker-living-root-bridge-cherrapunjee-meghalaya-city-ff?qlt=82&ts=1742165333655" class="d-block w-100" alt="..." id="destimage">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaRS_VeSyWmGU3Gs--p9fs-jFeFIMsaIgnBg&s" class="d-block w-100" alt="..." id="destimage">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://res.cloudinary.com/ddjuftfy2/image/upload/f_webp,c_fill,q_auto/memphis/xlarge/154154142_3.jpg" class="d-block w-100" alt="..." id="destimage">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_B2LGn3Iroye4O7s4XDDsY1RR116XtN3gwA&s" class="d-block w-100" alt="..." id="destimage">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTu4ib6g008UjRYD4N0OKRh92XHgdzAK-u7Bg&s" class="d-block w-100" alt="..." id="destimage">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://nexplore.org/blog/wp-content/uploads/2020/02/wari-chora2.jpg" class="d-block w-100" alt="..." id="destimage">
+                </div>
+            </div>
+        </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-title fs-5 text-success">🌧️ Meghalaya</div>
+                            <div class="card-subtitle">Known as the “Abode of Clouds,” Meghalaya enchants travelers with its living root bridges, misty hills, and serene waterfalls. A true haven for nature lovers and those seeking peace amidst the rain-soaked beauty of the Northeast.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 p-2">
+                    <div class="card card-fluid" id="destcard">
+                        <div class="card-header">
+                            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcT263BXODELxqXumMiUjnoni0Rl4mlC0NrSHm5CEBQa4BIt2seJEZoqnhtE2iXOXXEhjxu4O-KN8vltYVsAR-k4fPM&s=19" class="d-block w-100" alt="..." id="destimage">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcTxgL6YQ2-qctF7KmFcCO8lO6yhK-qJHueDUDrJ4OWYpfoWNmrnVHGhte1xAOTgMb8IjWU5Fdw1I3Z4SEW51wIMHQoj&s=19" class="d-block w-100" alt="..." id="destimage">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxDBL2IBRpmAFErJEYpUlqIcUDNP1IngogeJD2ZFuxbc7jFgmqOfX6ySQ203i-QC1xyzfzbqh-gjDkOBng7Rwdb0NQ6F8DJ7z43Yj3NhyLBjPA6jFppy9Kgy634kzvPCeyMr_pQ=w675-h390-n-k-no" class="d-block w-100" alt="..." id="destimage">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxDu65pnT2ta-EOwace2UPsZRLkfg19_uAIoH8duJkh7euC8SUANok2zEMmCrsAC2D58Q2H3dArXXpSb0Y4kHTWuVbW_pNat5pEArCkN0QIEArB6WxsRs5kqkzg913RGf92MwJt=w675-h390-n-k-no" class="d-block w-100" alt="..." id="destimage">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwBVFOOmcaPB9IZjSPDHVnOw1NEK3DYSl9wtOycbAcOcxuGq2WUKtLHywq6gMbRzpAPtkYsNAyMuv60UhJreP3fnX2yCOWxsAJEweF9iwupA9KvqEodFkxS9xqJBo43qGvXwE-Uyw=w675-h390-n-k-no" class="d-block w-100" alt="..." id="destimage">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcRm16dvD76zp4KKLcCerntIaL6mBRnvD9aSei0g2RM5SHr2KvC_bEYlaPEWVu4XKCF-JgIKLztgoPfu4WcJTxYB7VU&s=19" class="d-block w-100" alt="..." id="destimage">
+                </div>
+            </div>
+        </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-title fs-5 text-success">🏖️ Goa</div>
+                            <div class="card-subtitle">Goa is India’s ultimate beach escape — where golden sands, vibrant nightlife, and Portuguese charm come together. Whether you’re into water sports or sunset cafés, Goa offers a perfect blend of fun and relaxation.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 p-2">
+                    <div class="card card-fluid" id="destcard">
+                        <div class="card-header">
+                             <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKsWaadZorrm4nhrj0JbMq5lsYgqswo_cD9w&s" class="d-block w-100" alt="..." id="destimage">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://s7ap1.scene7.com/is/image/incredibleindia/1-amarnath-yatra-pahalgam-jammu-kashmir-city-hero?qlt=82&ts=1726816087141" class="d-block w-100" alt="..." id="destimage">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5JA0SPNY0Fs9qRwxHl5U_x6zLSJMeAWr0jA&s" class="d-block w-100" alt="..." id="destimage">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://lp-cms-production.imgix.net/2019-06/384e10f39ebc6fab9b991467541ce8ed-dal-lake.jpg?sharp=10&vib=20&w=1200&w=600&h=400" class="d-block w-100" alt="..." id="destimage">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://brownchinarkashmir.com/wp-content/uploads/2025/02/Kashmir_in_june_brown_chinar_kashmir.webp.webp" class="d-block w-100" alt="..." id="destimage">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://etimg.etb2bimg.com/photo/90697090.cms" class="d-block w-100" alt="..." id="destimage">
+                </div>
+            </div>
+        </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-title fs-5 text-success">🏔️ Kashmir</div>
+                            <div class="card-subtitle">Often called “Paradise on Earth,” Kashmir mesmerizes with its snow-clad mountains, shikara rides on Dal Lake, and blooming tulip gardens. A dream destination for every traveler seeking beauty and peace in nature’s lap.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 p-2">
+                    <div class="card card-fluid" id="destcard">
+                        <div class="card-header">
+                            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwfsaq68BtAHhHbeswAKTq_YszmZuLM-VoGtsppRtOXAjEQQ7uumOX5RK5koq3_tRy9yqwq7hwSQeajscDS-W2e4UBR9_kyNMWCmB8jzMlbdO1ufKKQfSiHfL7t4Zypl3mM_ZY=w675-h390-n-k-no" class="d-block w-100" alt="..." id="destimage">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://lh3.googleusercontent.com/gps-cs-s/AG0ilSzhcs8L58pOV6uo4vsCoVeyYU94J4O1LzYmv21hDU9LAGuF0sn0S9k_f_98O7bEZBIQ5Nyp6Vwdst7hMpQqG9Rq_Ku6mC4xFfq47c8s-12wSvmdLW669jfbYTuvVAGIPoQR1Ubd=w675-h390-n-k-no" class="d-block w-100" alt="..." id="destimage">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcTIyajxKcR5BlyNStSGQ5IoMe1eFvGeWJNvn8ikh5wx8JGSMnkgB2y9vdIsjF_0ypshZerLn1y-dLOrW-jR0WJPhf8&s=19" class="d-block w-100" alt="..." id="destimage">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcSOWZ9UV_26LHcNHtWx248KP-Ax-w41_dfEKRWWI9JJZk3Kob0NyieF4rR4bLkN7miJtn5RD6TnFYe5gQqGGIy2uaSF&s=19" class="d-block w-100" alt="..." id="destimage">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcT9m9iDdR4Eedq3mWgwaCVyS5I74SQYDfw-kmxAekq8iY7rDKpCsrJctXlggo1VLtL-mgu1s03SFL8ERnqoKwxJpKY&s=19" class="d-block w-100" alt="..." id="destimage">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcQiSyk6trFZ1qQJxobybGYTNoMJEnh8v7bZOHi1p-6rO8qaCjiZsA8cx668N8P8Ry7IlDy-EYMqA6uPkAmWG3DTDBw&s=19" alt="..." id="destimage">
+                </div>
+            </div>
+        </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-title fs-5 text-success">🏝️ Andaman & Nicobar Islands</div>
+                            <div class="card-subtitle">The Andaman & Nicobar Islands boast crystal-clear waters, coral reefs, and pristine beaches. Perfect for scuba diving, island hopping, or simply soaking in tropical serenity far from the mainland rush.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- testimonials -->
+
+        <div class="container my-5" id="testimonies">
+            <div 
+            class="carousel p-3 "
+            style="background-color:rgb(224, 241, 229);" 
+            id="testimonyCarousel"
+            data-bs-ride="carousel">
+                <div class="carousel-inner">
+
+                    <!-- testimony-(1 and 2) -->
+
+                    <div class="carousel-item active">
+                        <div class="card-group" style="gap: 1rem;">
+
+                            <!-- testimony-1 -->
+                        
+                            <div 
+                            class="card w-100 px-5 mx-1"
+                            id="card">
+                                <div class="card-body px-5">
+                                    <div class="card-title d-flex align-items-center">
+                                        <img 
+                                        src="https://images.pexels.com/photos/91227/pexels-photo-91227.jpeg"
+                                        class="d-inline img-fluid" 
+                                        style=" width: 5rem; 
+                                                height: 5rem; 
+                                                border-radius: 100%;"
+                                        alt="">
+                                        <p class="display-6 p-4">Stefan Stefancik</p>
+                                    </div>
+                                    <div class="card-subtitle">
+                                        <br>
+                                        <p class="fs-6">I planned my first solo trip through this website, and it turned out to be the best experience ever! The travel blogs and guides gave me all the confidence I needed to explore safely and freely. Truly a game-changer for solo travelers!</p>
+                                    </div>
+                                </div>
+                                <div class="card-footer text-end px-5">
+                                    <p>21-Oct-2025</p>
+                                </div>
+                            </div>
+                                                        
+                        <!-- testimony-2 -->
+
+                            <div 
+                            class="card w-100 px-5 mx-1"
+                            id="card">
+                                <div class="card-body px-5">
+                                    <div class="card-title d-flex align-items-center">
+                                        <img 
+                                        src="https://images.pexels.com/photos/720598/pexels-photo-720598.jpeg"
+                                        class="d-inline" 
+                                        style=" width: 5rem; 
+                                                height: 5rem; 
+                                                border-radius: 100%;"
+                                        alt="">
+                                        <p class="display-6 p-4">Willie Anderson</p>
+                                    </div>
+                                    <div class="card-subtitle">
+                                        <br>
+                                        <p class="fs-6">I always thought traveling was expensive until I found this website! The budget travel tips and destination guides helped me plan an amazing trip to Meghalaya without overspending. Highly recommended for students and backpackers!</p>
+                                    </div>
+                                </div>
+                                <div class="card-footer text-end px-5">
+                                    <p>21-Oct-2025</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                    <!-- testimony-(3 and 4) -->
+
+                    <div class="carousel-item">
+                        <div class="card-group" style="gap: 1rem;">
+
+                            <!-- testimony-3 -->
+
+                            <div class="card w-100 px-5 mx-1"
+                                id="card">
+                                <div class="card-body px-5">
+                                    <div class="card-title d-flex align-items-center">
+                                        <img 
+                                        src="https://images.pexels.com/photos/1065084/pexels-photo-1065084.jpeg"
+                                        class="d-inline" 
+                                        style=" width: 5rem; 
+                                            height: 5rem; 
+                                            border-radius: 100%;"
+                                        alt="">
+                                        <p class="display-6 p-4">Hannah Nelson</p>
+                                    </div>
+                                    <div class="card-subtitle">
+                                        <br>
+                                        <p class="fs-5">Our family trip to Uttarakhand was so well-planned thanks to this site. From choosing the right stay to finding local food spots, everything was made simple and enjoyable. It saved us so much time and effort!</p>
+                                    </div>
+                                </div>
+                                <div class="card-footer text-end px-5">
+                                    <p>21-Oct-2025</p>
+                                </div>
+                            </div>
+
+                            <!-- testimony-4 -->
+
+                             <div class="card w-100 px-5 mx-1"
+                                id="card">
+                                <div class="card-body px-5">
+                                    <div class="card-title d-flex align-items-center">
+                                        <img 
+                                        src="https://images.pexels.com/photos/840916/pexels-photo-840916.jpeg"
+                                        class="d-inline" 
+                                        style=" width: 5rem; 
+                                            height: 5rem; 
+                                            border-radius: 100%;"
+                                        alt="">
+                                        <p class="display-6 p-4">James Barn</p>
+                                    </div>
+                                    <div class="card-subtitle">
+                                        <br>
+                                        <p class="fs-5">This website is a goldmine for photographers! I found some hidden spots in Kashmir that gave me the most stunning sunrise shots. The travel blogs truly capture the beauty and essence of every place.</p>
+                                    </div>
+                                </div>
+                                <div class="card-footer text-end px-5">
+                                    <p>21-Oct-2025</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- testimony-(5 and 6) -->
+
+                    <div class="carousel-item" style="gap: 1rem;">
+                        <div class="card-group">
+
+                            <!-- testimony-5 -->
+
+                            <div class="card w-100 px-5 mx-1"
+                                id="card">
+                                <div class="card-body px-5">
+                                    <div class="card-title d-flex align-items-center">
+                                        <img 
+                                            src="https://images.pexels.com/photos/1043474/pexels-photo-1043474.jpeg"
+                                            class="d-inline" 
+                                            style=" width: 5rem; 
+                                                    height: 5rem; 
+                                                    border-radius: 100%;"
+                                            alt="">
+                                        <p class="display-6 p-4">Chloe</p>
+                                    </div>
+                                    <div class="card-subtitle">
+                                        <br>
+                                        <p class="fs-5">I'm always looking for new trekking routes and adventure ideas, and this platform never disappoints. The detailed travel stories and itineraries helped me plan my Himachal adventure perfectly!</p>
+                                    </div>
+                                </div>
+                                <div class="card-footer text-end px-5">
+                                    <p>21-Oct-2025</p>
+                                </div>
+                            </div>
+
+                            <!-- testimony-6 -->
+                             <div class="card w-100 px-5 mx-1"
+                                id="card">
+                                <div class="card-body px-5">
+                                    <div class="card-title d-flex align-items-center">
+                                        <img 
+                                            src="https://images.pexels.com/photos/775091/pexels-photo-775091.jpeg"
+                                            class="d-inline" 
+                                            style=" width: 5rem; 
+                                                    height: 5rem; 
+                                                    border-radius: 100%;"
+                                            alt="">
+                                        <p class="display-6 p-4">Chris</p>
+                                    </div>
+                                    <div class="card-subtitle">
+                                        <br>
+                                        <p class="fs-5">My journey to Rishikesh was more meaningful because of the insights I got from this site. It’s not just about places — it’s about experiences that touch your soul. I’ve already started planning my next trip!</p>
+                                    </div>
+                                </div>
+                                <div class="card-footer text-end px-5">
+                                    <p>21-Oct-2025</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- tesimony-(7 and 8) -->
+
+                    <div class="carousel-item" style="gap: 1rem;">
+                        <div class="card-group">
+
+                            <!-- testimony-7 -->
+
+                            <div class="card w-100 px-5 mx-1"
+                                id="card">
+                                <div class="card-body px-5">
+                                    <div class="card-title d-flex align-items-center">
+                                        <img 
+                                        src="https://images.pexels.com/photos/712513/pexels-photo-712513.jpeg" 
+                                        class="d-inline" 
+                                        style=" width: 5rem; 
+                                            height: 5rem; 
+                                            border-radius: 100%;"
+                                        alt="">
+                                        <p class="display-6 p-4">Adrea Piacquadio</p>
+                                    </div>
+                                    <div class="card-subtitle">
+                                        <br>
+                                        <p class="fs-5">This website helped us discover hidden romantic places in Goa that aren't usually on tourist lists. The recommendations felt so personal and authentic — it made our trip unforgettable!</p>
+                                    </div>
+                                </div>
+                                <div class="card-footer text-end px-5">
+                                    <p>21-Oct-2025</p>
+                                </div>
+                            </div>
+
+                            <!-- testimony-8 -->
+
+                            <div class="card w-100 px-5 mx-1"
+                                id="card">
+                                <div class="card-body px-5">
+                                    <div class="card-title d-flex align-items-center">
+                                        <img 
+                                        src="https://images.pexels.com/photos/2787341/pexels-photo-2787341.jpeg" 
+                                        class="d-inline" 
+                                        style=" width: 5rem; 
+                                            height: 5rem; 
+                                            border-radius: 100%;"
+                                        alt="">
+                                        <p class="display-6 p-4">Rosie</p>
+                                    </div>
+                                    <div class="card-subtitle">
+                                        <br>
+                                        <p class="fs-5">I travel a lot for both work and leisure, and this platform has become my go-to travel guide. The articles are detailed, honest, and easy to follow — perfect for anyone who loves exploring new places.</p>
+                                    </div>
+                                </div>
+                                <div class="card-footer text-end px-5">
+                                    <p>21-Oct-2025</p>
+                                </div>
+                            </div> 
+                        </div>
+                    </div>
+
+                    <!-- testimony-(9 - 10) -->
+
+                    <div class="carousel-item" style="gap: 1rem;">
+                        <div class="card-group">
+
+                            <!-- testimony-9 -->
+
+                            <div class="card w-100 px-5 mx-1"
+                                id="card">
+                                <div class="card-body px-5">
+                                    <div class="card-title d-flex align-items-center">
+                                        <img 
+                                        src="https://images.pexels.com/photos/732629/pexels-photo-732629.jpeg" 
+                                        class="d-inline" 
+                                        style=" width: 5rem; 
+                                                height: 5rem; 
+                                                border-radius: 100%;" 
+                                        alt="">
+                                        <p class="display-6 p-4">Sassu Anas</p>
+                                    </div>
+                                    <div class="card-subtitle">
+                                        <br>
+                                        <p class="fs-5">As someone who loves peaceful destinations, I found this website to be a treasure. The blogs on Meghalaya and Kashmir inspired me to explore nature more deeply. Every suggestion turned out to be worth it!</p>
+                                    </div>
+                                </div>
+                                <div class="card-footer text-end px-5">
+                                    <p>21-Oct-2025</p>
+                                </div>
+                            </div>
+
+                            <!-- testimony-10 -->
+
+                            <div class="card w-100 px-5 mx-1"
+                                id="card">
+                                <div class="card-body px-5">
+                                    <div class="card-title d-flex align-items-center">
+                                        <img 
+                                        src="https://images.pexels.com/photos/34346950/pexels-photo-34346950.jpeg" 
+                                        class="d-inline" 
+                                        style=" width: 5rem; 
+                                                height: 5rem; 
+                                                border-radius: 100%;" 
+                                        alt="">
+                                        <p class="display-6 p-4">Sam Curran</p>
+                                    </div>
+                                    <div class="card-subtitle">
+                                        <br>
+                                        <p class="fs-5">I used this website to plan my Goa vacation, and everything went smoothly — from finding quiet beaches to the best beach cafés. It’s like having a travel buddy who knows all the local secrets!</p>
+                                    </div>
+                                </div>
+                                <div class="card-footer text-end px-5">
+                                    <p>21-Oct-2025</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- previous button -->
+                    <button
+                    class="carousel-control-prev bg-secondary rounded-circle align-middle"
+                    id="CarouselButton"
+                    type="button"
+                    data-bs-target="#testimonyCarousel"
+                    data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" ariahidden="false"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+
+                    <!-- next button -->
+                    <button 
+                    class="carousel-control-next bg-secondary rounded-circle align-middle"
+                    id="CarouselButton"
+                    type="button"
+                    data-bs-target="#testimonyCarousel"
+                    data-bs-slide="next">
+                        <span class="carousel-control-next-icon" ariahidden="false"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>                 
+            </div>           
+        </div>
+
+        <!-- footer-contact info -->
+            <div class="container-fluid" id="contact_us">
+            <div class="company text-light bg-secondary d-flex justify-content-evenly">
+                <div class="help pt-3">
+                    <ul >
+                    <p style="font-size:large;">Help</p>
+                    <li type="none">Help center</li>
+                    <li type="none">FAQs</li>
+                    <li type="none">Privacy Policy</li>
+                    <li type="none">Cookie Policy</li>
+                    <li type="none">Terms of use</li>
+                    <li type="none">Manage Cookie settings</li>
+                    <li type="none">Digital Services Act</li>
+                    <li type="none">Contet guidelines & reporting</li>
+                    <li type="none">Modern Slavery Statement</li>
+                </ul>
+                </div>
+                <div class="Company pt-3">
+                    <ul>
+                        <p style="font-size: large;">Company</p>
+                        <li type="none">About us</li>
+                        <li type="none">Careers</li>
+                        <li type="none">Press</li>
+                        <li type="none">Blog</li>
+                    </ul>
+                </div>
+                <div class="travveldestinations pt-3">
+                    <ul>
+                        <p style="font-size: large;">Destinations</p>
+                        <li type="none">Countries/Territories</li>
+                        <li type="none">All Flight Routes</li>
+                    </ul>
+                </div>
+                <div class="partnerwithus pt-3">
+                    <ul>
+                        <p style="font-size: large;">Partner with us</p>
+                        <li type="none">Partner Hub</li>
+                        <li type="none">Advertise on Agoda</li>
+                        <li type="none">Affiliates</li>
+                        <li type="none">Agoda Documentation</li>
+                    </ul>
+                </div>
+                <div class="gethteapp pt-3">
+                    <ul>
+                        <p style="font-size: large;">Get the app</p>
+                    <li type="none">iOS app</li>
+                    <li type="none">Android app</li>
+                </ul>
+            </div>
+            </div>
+            <div class="Countriesandcities"></div>
+        </div>
+
+
+
+        
+    </div>
+</body>
+
+</html>

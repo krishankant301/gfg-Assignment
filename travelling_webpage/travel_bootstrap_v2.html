@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Bootstrap v2</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <style>
+        .testimony-card {
+            height: 25rem;
+            background-color: rgb(246, 243, 238);
+        }
+
+        .carousel-custom-btn {
+            width: 3rem;
+            height: 3rem;
+            margin-top: 13%;
+        }
+
+        .destination-image {
+            height: 40vh;
+            border-radius: 1rem;
+            object-fit: cover;
+        }
+
+        .destination-card {
+            height: 500px;
+            border-radius: 1.5rem;
+        }
+
+        .main-bg {
+            background-color: skyblue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid main-bg">
+
+        <!-- navbar -->
+        <div class="container">
+            <nav class="navbar navbar-expand-xxl navbar-light sticky-top" style="background-color: blanchedalmond;">
+                <div class="container">
+                    <img src="https://cdn6.agoda.net/images/kite-js/logo/agoda/color-default.svg" height="45rem"
+                        alt="Primary Logo">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav"
+                        aria-controls="nav" aria-expanded="false">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="nav">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item">
+                                <a href="#home" class="nav-link fs-5">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#destinations" class="nav-link fs-5">Destinations</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#testimonies" class="nav-link fs-5">Testimonials</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="/index.html" class="nav-link fs-5">
+                                    <button class="btn bg-primary text-white" type="button">
+                                        Book Now
+                                    </button>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#contact_us" class="nav-link fs-5">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <!-- Home -->
+
+        <div class="container mb-5" id="home" style="min-height: 81vh;">
+            <div class="carousel slide" id="carouselExampleIndicators" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide-1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide-2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide-3"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                        aria-label="Slide-4"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+                        aria-label="Slide-5"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"
+                        aria-label="Slide-6"></button>
+                </div>
+                <div class="carousel-inner text-center">
+                    <div class="carousel-item active" data-bs-interval="4000" data-bs-pause="hover">
+                        <img src="https://lp-cms-production.imgix.net/2022-03/GettyRF_956963154.jpg?auto=format,compress&q=72&w=1095&fit=crop&crop=faces,edges"
+                            alt="" style="height: 80vh; width: 90vw; object-fit: cover;">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="4000" data-bs-pause="hover">
+                        <img src="https://static.toiimg.com/photo/msid-93246451,width-96,height-65.cms" alt=""
+                            style="height: 80vh; width: 90vw; object-fit: cover;">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="4000" data-bs-pause="hover">
+                        <img src="https://travenjo.com/wp-content/uploads/2022/06/Seven-Sisters-Falls-1-gaimg.jpg?x58748"
+                            alt="" style="height: 80vh; width: 90vw; object-fit: cover;">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="4000" data-bs-pause="hover">
+                        <img src="https://marquishotels.in/wp-content/uploads/2019/06/North_Goa_Beach-1024x768.jpg"
+                            alt="" style="height: 80vh; width: 90vw; object-fit: cover;">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="4000" data-bs-pause="hover">
+                        <img src="https://invisit.in/images/destination/kashmir/kashmir-thumbnail2.jpg" alt=""
+                            style="height: 80vh; width: 90vw; object-fit: cover;">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="4000" data-bs-pause="hover">
+                        <img src="https://images.pexels.com/photos/1481096/pexels-photo-1481096.jpeg" alt=""
+                            style="height: 80vh; width: 90vw; object-fit: cover;">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- destinations -->
+
+        <div class="container my-5" id="destinations">
+            <p class="display-3 text-center">Destinations</p>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                <!-- Card 1 -->
+                <div class="col">
+                    <div class="card h-100 destination-card">
+                        <div class="card-header p-0">
+                            <div id="carouselDest1" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="https://www.tusktravel.com/blog/wp-content/uploads/2023/02/Mussoorie-Uttarakhand4.jpg"
+                                            class="d-block w-100 destination-image" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="https://www.peakadventuretour.com/assets/imgs/uttarakhand-tourism-01.webp"
+                                            class="d-block w-100 destination-image" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9Ae9dQkq-rnmX0bkL0jGbVkURr4h_scvk_w&s"
+                                            class="d-block w-100 destination-image" alt="...">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-title fs-5 text-success">🏔️ Uttrakhand</div>
+                            <div class="card-subtitle">Uttarakhand, the “Land of Gods,” is a serene Himalayan state known
+                                for its spiritual heritage and breathtaking landscapes.</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="col">
+                    <div class="card h-100 destination-card">
+                        <div class="card-header p-0">
+                            <div id="carouselDest2" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="https://images.travelandleisureasia.com/wp-content/uploads/sites/2/2023/11/06105321/Feature-11-1600x900.jpg"
+                                            class="d-block w-100 destination-image" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="https://assets.cntraveller.in/photos/66ab6453fe4fdad0450b3402/master/pass/GettyImages-1580694292.jpg"
+                                            class="d-block w-100 destination-image" alt="...">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-title fs-5 text-success">🌄 Himachal Pradesh</div>
+                            <div class="card-subtitle">Himachal Pradesh is a paradise nestled in the Himalayas, known for
+                                its charming hill stations like Manali and Shimla.</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="col">
+                    <div class="card h-100 destination-card">
+                        <div class="card-header p-0">
+                            <div id="carouselDest3" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="https://s7ap1.scene7.com/is/image/incredibleindia/double-decker-living-root-bridge-cherrapunjee-meghalaya-city-ff?qlt=82&ts=1742165333655"
+                                            class="d-block w-100 destination-image" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaRS_VeSyWmGU3Gs--p9fs-jFeFIMsaIgnBg&s"
+                                            class="d-block w-100 destination-image" alt="...">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-title fs-5 text-success">🌧️ Meghalaya</div>
+                            <div class="card-subtitle">Known as the “Abode of Clouds,” Meghalaya enchants travelers with its
+                                living root bridges and misty hills.</div>
+                        </div>
+                    </div>
+                </div>
+
+                 <!-- Card 4 -->
+                 <div class="col">
+                    <div class="card h-100 destination-card">
+                        <div class="card-header p-0">
+                            <div id="carouselDest4" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcT263BXODELxqXumMiUjnoni0Rl4mlC0NrSHm5CEBQa4BIt2seJEZoqnhtE2iXOXXEhjxu4O-KN8vltYVsAR-k4fPM&s=19"
+                                            class="d-block w-100 destination-image" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcTxgL6YQ2-qctF7KmFcCO8lO6yhK-qJHueDUDrJ4OWYpfoWNmrnVHGhte1xAOTgMb8IjWU5Fdw1I3Z4SEW51wIMHQoj&s=19"
+                                            class="d-block w-100 destination-image" alt="...">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-title fs-5 text-success">🏖️ Goa</div>
+                            <div class="card-subtitle">Goa is India’s ultimate beach escape — where golden sands, vibrant nightlife, and Portuguese charm come together.</div>
+                        </div>
+                    </div>
+                </div>
+
+                 <!-- Card 5 -->
+                 <div class="col">
+                    <div class="card h-100 destination-card">
+                        <div class="card-header p-0">
+                            <div id="carouselDest5" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKsWaadZorrm4nhrj0JbMq5lsYgqswo_cD9w&s"
+                                            class="d-block w-100 destination-image" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="https://s7ap1.scene7.com/is/image/incredibleindia/1-amarnath-yatra-pahalgam-jammu-kashmir-city-hero?qlt=82&ts=1726816087141"
+                                            class="d-block w-100 destination-image" alt="...">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-title fs-5 text-success">🏔️ Kashmir</div>
+                            <div class="card-subtitle">Often called “Paradise on Earth,” Kashmir mesmerizes with its snow-clad mountains and shikara rides.</div>
+                        </div>
+                    </div>
+                </div>
+
+                 <!-- Card 6 -->
+                 <div class="col">
+                    <div class="card h-100 destination-card">
+                        <div class="card-header p-0">
+                            <div id="carouselDest6" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwfsaq68BtAHhHbeswAKTq_YszmZuLM-VoGtsppRtOXAjEQQ7uumOX5RK5koq3_tRy9yqwq7hwSQeajscDS-W2e4UBR9_kyNMWCmB8jzMlbdO1ufKKQfSiHfL7t4Zypl3mM_ZY=w675-h390-n-k-no"
+                                            class="d-block w-100 destination-image" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="https://lh3.googleusercontent.com/gps-cs-s/AG0ilSzhcs8L58pOV6uo4vsCoVeyYU94J4O1LzYmv21hDU9LAGuF0sn0S9k_f_98O7bEZBIQ5Nyp6Vwdst7hMpQqG9Rq_Ku6mC4xFfq47c8s-12wSvmdLW669jfbYTuvVAGIPoQR1Ubd=w675-h390-n-k-no"
+                                            class="d-block w-100 destination-image" alt="...">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-title fs-5 text-success">🏝️ Andaman & Nicobar</div>
+                            <div class="card-subtitle">The Andaman & Nicobar Islands boast crystal-clear waters, coral reefs, and pristine beaches.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- testimonials -->
+
+        <div class="container my-5" id="testimonies">
+            <div class="carousel p-3 slide" style="background-color:rgb(224, 241, 229);" id="testimonyCarousel"
+                data-bs-ride="carousel">
+                <div class="carousel-inner">
+
+                    <!-- testimony-1-2 -->
+                    <div class="carousel-item active">
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <div class="card testimony-card h-100">
+                                    <div class="card-body px-5">
+                                        <div class="d-flex align-items-center mb-3">
+                                            <img src="https://images.pexels.com/photos/91227/pexels-photo-91227.jpeg"
+                                                class="rounded-circle" style="width: 5rem; height: 5rem; object-fit: cover;" alt="">
+                                            <p class="display-6 ms-4 mb-0">Stefan</p>
+                                        </div>
+                                        <p class="card-text">Best experience ever! Detailed blogs gave me confidence to explore.</p>
+                                    </div>
+                                    <div class="card-footer text-end px-5">
+                                        <small class="text-muted">21-Oct-2025</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card testimony-card h-100">
+                                    <div class="card-body px-5">
+                                        <div class="d-flex align-items-center mb-3">
+                                            <img src="https://images.pexels.com/photos/720598/pexels-photo-720598.jpeg"
+                                                class="rounded-circle" style="width: 5rem; height: 5rem; object-fit: cover;" alt="">
+                                            <p class="display-6 ms-4 mb-0">Willie</p>
+                                        </div>
+                                        <p class="card-text">Budget travel tips were amazing. Highly recommended for students!</p>
+                                    </div>
+                                    <div class="card-footer text-end px-5">
+                                        <small class="text-muted">21-Oct-2025</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- testimony-3-4 -->
+                    <div class="carousel-item">
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <div class="card testimony-card h-100">
+                                    <div class="card-body px-5">
+                                        <div class="d-flex align-items-center mb-3">
+                                            <img src="https://images.pexels.com/photos/1065084/pexels-photo-1065084.jpeg"
+                                                class="rounded-circle" style="width: 5rem; height: 5rem; object-fit: cover;" alt="">
+                                            <p class="display-6 ms-4 mb-0">Hannah</p>
+                                        </div>
+                                        <p class="card-text">Family trip was so well-planned. Saved us so much time.</p>
+                                    </div>
+                                    <div class="card-footer text-end px-5">
+                                        <small class="text-muted">21-Oct-2025</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card testimony-card h-100">
+                                    <div class="card-body px-5">
+                                        <div class="d-flex align-items-center mb-3">
+                                            <img src="https://images.pexels.com/photos/840916/pexels-photo-840916.jpeg"
+                                                class="rounded-circle" style="width: 5rem; height: 5rem; object-fit: cover;" alt="">
+                                            <p class="display-6 ms-4 mb-0">James</p>
+                                        </div>
+                                        <p class="card-text">Goldmine for photographers! Found hidden spots for sunrise shots.</p>
+                                    </div>
+                                    <div class="card-footer text-end px-5">
+                                        <small class="text-muted">21-Oct-2025</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- testimony-5-6 -->
+                    <div class="carousel-item">
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <div class="card testimony-card h-100">
+                                    <div class="card-body px-5">
+                                        <div class="d-flex align-items-center mb-3">
+                                            <img src="https://images.pexels.com/photos/1043474/pexels-photo-1043474.jpeg"
+                                                class="rounded-circle" style="width: 5rem; height: 5rem; object-fit: cover;" alt="">
+                                            <p class="display-6 ms-4 mb-0">Chloe</p>
+                                        </div>
+                                        <p class="card-text">Detailed travel stories and itineraries helped me plan my adventure.</p>
+                                    </div>
+                                    <div class="card-footer text-end px-5">
+                                        <small class="text-muted">21-Oct-2025</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card testimony-card h-100">
+                                    <div class="card-body px-5">
+                                        <div class="d-flex align-items-center mb-3">
+                                            <img src="https://images.pexels.com/photos/775091/pexels-photo-775091.jpeg"
+                                                class="rounded-circle" style="width: 5rem; height: 5rem; object-fit: cover;" alt="">
+                                            <p class="display-6 ms-4 mb-0">Chris</p>
+                                        </div>
+                                        <p class="card-text">Not just places, but experiences. Already planning my next trip!</p>
+                                    </div>
+                                    <div class="card-footer text-end px-5">
+                                        <small class="text-muted">21-Oct-2025</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- controls -->
+                    <button class="carousel-control-prev bg-secondary rounded-circle align-middle carousel-custom-btn"
+                        type="button" data-bs-target="#testimonyCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next bg-secondary rounded-circle align-middle carousel-custom-btn"
+                        type="button" data-bs-target="#testimonyCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- footer-contact info -->
+        <footer class="bg-secondary text-light py-5" id="contact_us">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-2 mb-4">
+                        <h5 class="mb-3">Help</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="text-light text-decoration-none">Help center</a></li>
+                            <li><a href="#" class="text-light text-decoration-none">FAQs</a></li>
+                            <li><a href="#" class="text-light text-decoration-none">Privacy Policy</a></li>
+                            <li><a href="#" class="text-light text-decoration-none">Cookie Policy</a></li>
+                            <li><a href="#" class="text-light text-decoration-none">Terms of use</a></li>
+                            <li><a href="#" class="text-light text-decoration-none">Manage Cookie settings</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2 mb-4">
+                        <h5 class="mb-3">Company</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="text-light text-decoration-none">About us</a></li>
+                            <li><a href="#" class="text-light text-decoration-none">Careers</a></li>
+                            <li><a href="#" class="text-light text-decoration-none">Press</a></li>
+                            <li><a href="#" class="text-light text-decoration-none">Blog</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 mb-4">
+                        <h5 class="mb-3">Destinations</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="text-light text-decoration-none">Countries/Territories</a></li>
+                            <li><a href="#" class="text-light text-decoration-none">All Flight Routes</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 mb-4">
+                        <h5 class="mb-3">Partner with us</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="text-light text-decoration-none">Partner Hub</a></li>
+                            <li><a href="#" class="text-light text-decoration-none">Advertise on Agoda</a></li>
+                            <li><a href="#" class="text-light text-decoration-none">Affiliates</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2 mb-4">
+                        <h5 class="mb-3">Get the app</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="text-light text-decoration-none">iOS app</a></li>
+                            <li><a href="#" class="text-light text-decoration-none">Android app</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+</body>
+
+</html>
